@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact List Application</h1>
+        </header>
+        <main>
+            <div id="add-contact-form">
+                <h2>Add a Contact</h2>
+                <input type="text" id="contact-name" placeholder="Name" required>
+                <input type="text" id="contact-phone" placeholder="Phone" required>
+                <input type="email" id="contact-email" placeholder="Email" required>
+                <button onclick="addContactFromInput()">Add Contact</button>
+            </div>
+            <h2>Contact List</h2>
+            <table id="contact-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="contact-list"></tbody>
+            </table>
+            <div id="output"></div>
+        </main>
+        <footer>
+            <p>&copy; Created by <b>Fausto Astudillo Idrovo</b></p>
+        </footer>
+    </div>
+    <script src="contactList.js"></script>
+</body>
+</html>
